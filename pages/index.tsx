@@ -2,6 +2,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import MyIFrame from "../components/MyIFrame"
 
 const Home: NextPage = () => {
   return (
@@ -22,8 +23,7 @@ const Home: NextPage = () => {
           web3 iframe
         </h1>
 
-        <iframe src="/api/iframe" height="200" width="300" title="Iframe Example"></iframe>
-
+        <MyIFrame />
       </main>
     </div>
   );
