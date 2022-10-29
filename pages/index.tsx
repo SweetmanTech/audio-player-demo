@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           web3 iframe
         </h1>
 
-        <iframe src="http://localhost:3000/api/iframe" height="200" width="300" title="Iframe Example"></iframe>
+        <iframe src="/api/iframe" height="200" width="300" title="Iframe Example"></iframe>
 
       </main>
     </div>
