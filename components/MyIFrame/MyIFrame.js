@@ -1,9 +1,9 @@
 const MyIFrame = () => {
   return (
     <iframe
-      src="/api/iframe"
-      height="200"
-      width="300"
+      src="/iframe"
+      height="500"
+      width="500"
       title="Iframe Example"
     ></iframe>
   );

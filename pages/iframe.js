@@ -1,13 +1,12 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
-const MainEmbed = () => {
+const Iframe = () => {
   return (
     <div>
-      <h1>Hello World</h1>
       <ConnectButton />
-      <h1>Hello World</h1>
+      <h1>HELLO WORLD</h1>
     </div>
   );
 };
 
-export default MainEmbed;
+export default Iframe;

@@ -17,8 +17,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <ConnectButton />
-
         <h1 className={styles.title}>
           web3 iframe
         </h1>
