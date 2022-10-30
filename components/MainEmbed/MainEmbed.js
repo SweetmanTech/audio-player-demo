@@ -1,5 +1,3 @@
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-
 const MainEmbed = () => {
   return (
     <div>
