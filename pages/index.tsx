@@ -3,6 +3,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import MyIFrame from "../components/MyIFrame"
+import { AudioPlayer } from 'decent-audio-player';
 
 const Home: NextPage = () => {
   return (
@@ -18,10 +19,10 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          web3 iframe
+          Decent Audio Player
         </h1>
+        <AudioPlayer size={56} audioSrc='https://nftstorage.link/ipfs/QmWNaSdhXq2WdusiBcVC2Ju5A1JJySRDVNrQMEBGcaazvC' callbackAfterPlay={console.log} active />
 
-        <MyIFrame />
       </main>
     </div>
   );
