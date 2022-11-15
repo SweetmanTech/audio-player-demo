@@ -1,10 +1,22 @@
-# Web3 iFrame
+# Audio Player Demo
 
-- Collaboration between Decent & Adam Levy.
+- [Decent Audio Player](https://github.com/decentxyz/ux-components) - `npm i decent-audio-player`
 
 ## Getting Started
 
-First, run the development server:
+First, install packages:
+
+```bash
+npm install
+```
+
+or yarn
+
+```bash
+yarn
+```
+
+then, run the development server:
 
 ```bash
 npm run dev
@@ -13,7 +25,3 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-### Credits
-
-This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Next.js](https://nextjs.org/) project bootstrapped with [`create-rainbowkit`](https://github.com/rainbow-me/rainbowkit/tree/main/packages/create-rainbowkit).
