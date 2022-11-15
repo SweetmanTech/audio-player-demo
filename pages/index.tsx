@@ -3,9 +3,24 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import MyIFrame from "../components/MyIFrame"
-import { AudioPlayer } from 'decent-audio-player';
+import { AudioPlayer, PersistentPlayer } from 'decent-audio-player';
+import { Song } from 'decent-audio-player/dist/types/shared';
 
 const Home: NextPage = () => {
+  const playlist = [{
+    songUrl: "https://nftstorage.link/ipfs/bafybeihxtxizfgtp5nazudkuc6dvtru2rykyklsse7t5r3rquydirgunxy/SHINY_7.wav",
+    project: "shiny",
+    artist: "kat dahlia",
+    website: "https://github.com/SweetmanTech",
+    image: "https://nftstorage.link/ipfs/QmVJBGbMXHNyBe62ruPByK5MG6KdbZkSGPiBMfpqRQ6qP2"
+  }, {
+    songUrl: "https://nftstorage.link/ipfs/bafybeid3su3rqfwj7ydk52coz3xinku5vc7uu557t7rdkxx5dswcbxolda",
+    project: "rugburn by sad alex",
+    artist: "sad alex & chillpill",
+    website: "https://github.com/SweetmanTech",
+    image: "https://nftstorage.link/ipfs/bafybeif55mfehhzipicowg7fpdvdmgulwk6jgz2pbbxwuxjt7pmr7swlvu"
+  }];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -21,8 +36,9 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Decent Audio Player
         </h1>
-        <AudioPlayer size={56} audioSrc='https://nftstorage.link/ipfs/QmWNaSdhXq2WdusiBcVC2Ju5A1JJySRDVNrQMEBGcaazvC' callbackAfterPlay={console.log} active />
+        <AudioPlayer hasPlayer size={56} audioSrc='https://nftstorage.link/ipfs/QmWNaSdhXq2WdusiBcVC2Ju5A1JJySRDVNrQMEBGcaazvC' callbackAfterPlay={console.log} active />
 
+    <PersistentPlayer playlist={playlist} />
       </main>
     </div>
   );
