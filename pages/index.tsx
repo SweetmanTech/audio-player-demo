@@ -4,11 +4,10 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import MyIFrame from "../components/MyIFrame"
 import { AudioPlayer, PersistentPlayer } from 'decent-audio-player';
-import { Song } from 'decent-audio-player/dist/types/shared';
 
 const Home: NextPage = () => {
   const playlist = [{
-    songUrl: "https://nftstorage.link/ipfs/bafybeihxtxizfgtp5nazudkuc6dvtru2rykyklsse7t5r3rquydirgunxy/SHINY_7.wav",
+    songUrl: "https://streams.radiomast.io/09c93c79-cd31-46ab-aeeb-69eee7d313e2",
     project: "shiny",
     artist: "kat dahlia",
     website: "https://github.com/SweetmanTech",
@@ -38,7 +37,7 @@ const Home: NextPage = () => {
         </h1>
         <AudioPlayer hasPlayer size={56} audioSrc='https://nftstorage.link/ipfs/QmWNaSdhXq2WdusiBcVC2Ju5A1JJySRDVNrQMEBGcaazvC' callbackAfterPlay={console.log} active />
 
-    <PersistentPlayer playlist={playlist} />
+        {/* <PersistentPlayer playlist={playlist} /> */}
       </main>
     </div>
   );
