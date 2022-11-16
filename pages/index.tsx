@@ -3,8 +3,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import MyIFrame from "../components/MyIFrame"
-import { AudioPlayer, PersistentPlayer } from '@decent.xyz/sdk/node_modules/decent-audio-player';
-import { Song } from 'decent-audio-player/dist/types/shared';
+import { AudioPlayer, PersistentPlayer } from 'decent-audio-player';
 
 const Home: NextPage = () => {
   const playlist = [{

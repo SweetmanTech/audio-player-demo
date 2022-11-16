@@ -5,7 +5,7 @@ import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
 import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
-import { DispatchPlayerContext, PlayerContext, playerInitialState, playerReducer } from '@decent.xyz/sdk/node_modules/decent-audio-player';
+import { DispatchPlayerContext, PlayerContext, playerInitialState, playerReducer } from 'decent-audio-player';
 import { useReducer } from 'react';
 
 const { chains, provider, webSocketProvider } = configureChains(
